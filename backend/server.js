@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended: false}))
 app.use(cors({
   origin: ["http://localhost:3000/","https://mern-task-app-vignesh.onrender.com"]
 }))
-app.use("api/tasks",taskRoute);
+app.use("/api/tasks",taskRoute);
 
 //Routes
 
